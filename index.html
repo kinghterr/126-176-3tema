@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Блочные и строчные элементы</title>
+<style>
+#block1 { width: 100px; height: 100px; border: 1px solid red; margin-bottom: 10px; }
+#block2 { height: 100px; border: 1px solid red; margin-bottom: 10px; }
+#block3 { width: 100px; border: 1px solid red; margin-bottom: 10px; }
+#block4 { width: 100px; border: 1px solid red; margin-bottom: 10px; }
+.block-list { width: 100px; height: 100px; margin-bottom: 10px; border: 1px solid red; }
+#inline1 { width: 100px; height: 100px; border: 1px solid red; }
+.inline-list { border: 1px solid red; }
+.inline-nospaces span { border: 1px solid red; }
+#display-span { display: block; width: 100px; height: 100px; border: 1px solid red; margin-bottom: 10px; }
+#display-div { display: inline; width: 100px; height: 100px; border: 1px solid red; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+
+<div id="block1">text</div>
+<div id="block2">text</div>
+<div id="block3">text</div>
+<div id="block4"></div>
+
+<div class="block-list">text</div>
+<div class="block-list">text</div>
+<div class="block-list">text</div>
+
+<span id="inline1">text</span>
+
+<span class="inline-list">text</span>
+<span class="inline-list">text</span>
+<span class="inline-list">text</span>
+
+<div class="inline-nospaces">
+<span>text</span><span>text</span><span>text</span>
+</div>
+
+<span id="display-span">text</span>
+<div id="display-div">text</div>
+
+</body>
+</html>
